@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#">Game Controllers</a></li>
+                    <li><a href="#">VR Accessories</a></li>
+                    <li><a href="#">Media Remotes</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2 class="anim">PS5 V2<br>Dualshock 5</h2>
+                <h3 class="anim">Wirelees Controller for PlayStation 5</h3>
+                <p class="anim">(Compatible/Generic)</p>
+                <h4 class="anim">CA$629 </h4>
+                <button type="button anim" class="anim">Buy Now<img src="img/arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="img/controller.png" class="controller anim">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="img/add.png">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <img src="img/fb.png">
+            <img src="img/tw.png">
+            <img src="img/ig.png">
+        </div>
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+menuList.style.maxHeight = "0px";
+
+function togglemenu(){
+
+    if(menuList.style.maxHeight == "0px")
+    {
+        menuList.style.maxHeight = "130px";
+    }
+    else{
+        menuList.style.maxHeight = "0px";
+    }
+}
+    </script>
+
+    <link rel="stylesheet" href="javascript/script.js">
+</body>
+</html>
